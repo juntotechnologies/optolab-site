@@ -1,0 +1,22 @@
+:root { color-scheme: light dark; --paper: #f1f2fb; --ink: #1a1d3a; --ink-2: #565a80; --panel: #ffffff; --line: #d9dcf2; --accent: #4a5de0; --on-accent: #ffffff; --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
+@media (prefers-color-scheme: dark) { :root { --paper: #11132a; --ink: #eef0ff; --ink-2: #a6abd4; --panel: #1b1e3d; --line: #30345e; --accent: #8896ff; --on-accent: #11132a; } }
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; display: grid; grid-template-rows: auto 1fr; background: var(--paper); color: var(--ink); font: 16px/1.5 var(--sans); }
+.top { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 14px clamp(16px, 4vw, 40px); }
+.back { color: var(--ink-2); text-decoration: none; min-height: 44px; display: inline-flex; align-items: center; gap: 6px; font-size: 15px; }
+.back:hover { color: var(--ink); }
+.chip { padding: 4px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--panel); font-size: 13px; font-weight: 600; }
+.layout { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: clamp(24px, 5vw, 72px); width: min(100%, 1080px); margin: 0 auto; padding: 0 clamp(16px, 4vw, 40px) 24px; }
+h1 { margin: 0; font-size: clamp(38px, 6vw, 60px); line-height: 1.05; letter-spacing: -.02em; }
+.lede { margin: 12px 0 20px; font-size: clamp(18px, 2.2vw, 22px); line-height: 1.35; color: var(--ink-2); text-wrap: pretty; }
+.steps { list-style: none; margin: 0 0 20px; padding: 0; display: grid; gap: 10px; }
+.steps li { display: grid; grid-template-columns: 84px 1fr; gap: 12px; padding-top: 10px; border-top: 1px solid var(--line); }
+.steps b { font-weight: 600; }
+.concept { margin: 0 0 18px; font-size: 14px; color: var(--ink-2); }
+.concept strong { color: var(--ink); }
+.action { display: inline-flex; align-items: center; gap: 8px; min-height: 44px; padding: 0 18px; border-radius: 10px; background: var(--accent); color: var(--on-accent); text-decoration: none; font-weight: 600; }
+.sr { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); }
+.phone { margin: 0; display: grid; justify-items: center; gap: 8px; }
+.phone video { display: block; height: min(72svh, 620px); width: auto; aspect-ratio: 480 / 1034; border-radius: 26px; border: 1px solid var(--line); background: #000; box-shadow: 0 20px 50px rgb(26 29 58 / .22); }
+figcaption { max-width: 300px; text-align: center; font-size: 12px; color: var(--ink-2); }
+@media (max-width: 760px) { .layout { grid-template-columns: minmax(0, 1fr); } .phone video { height: auto; width: min(100%, 300px); } }

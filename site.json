@@ -1,0 +1,15 @@
+{
+  "name": "OptoLab",
+  "url": "https://optolab.juntotechnologies.com/",
+  "status": "Concept",
+  "lede": "Turn iPhone macro images into eye-image assessments you can inspect and question.",
+  "steps": [
+    {"title": "Capture", "text": "An iPhone and a 15× macro lens take a close image of the front of the eye."},
+    {"title": "Review", "text": "Local measurements and GPT-6 Astra produce a structured image assessment."},
+    {"title": "Question", "text": "Each claim shows its evidence, another explanation and how to check it."}
+  ],
+  "limits": "Experimental hackathon prototype. Interpretations are hypotheses. Segmentation and measurements are not clinically validated.",
+  "concept": "Concept. Not a medical device. Not for patient care.",
+  "source": "https://github.com/shaunporwal/OptoLab",
+  "hub": {"label": "Junto Technologies", "href": "https://juntotechnologies.com/#optolab"}
+}
