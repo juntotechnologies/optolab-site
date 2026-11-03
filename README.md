@@ -1,3 +1,3 @@
-# OptoLab site
+# OptoLab site (moved)
 
-Landing page: https://optolab.juntotechnologies.com/ . Prototype code: https://github.com/shaunporwal/OptoLab .
+Moved to `site/` in https://github.com/juntotechnologies/OptoLab . Page: https://optolab.juntotechnologies.com/ .
